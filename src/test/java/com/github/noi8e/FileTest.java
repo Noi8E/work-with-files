@@ -40,6 +40,7 @@ public class FileTest {
             Scanner s = new Scanner(Objects.requireNonNull(stream)).useDelimiter("\\A");
             String data = s.hasNext() ? s.next() : "";
             assertThat(data).contains(expectedValue);
+            assertThat(true);
         }
 
     }
